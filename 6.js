@@ -36,3 +36,12 @@ let result3 = doM(function*() {
 
 console.log('Result3:');
 console.log(result3);
+
+//------------------------------------------------
+/*
+ * Exercise
+ *
+ * If you are god then
+ * Learn you a Haskell for Greater Good!
+ *
+ */

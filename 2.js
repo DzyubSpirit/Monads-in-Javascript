@@ -47,4 +47,14 @@ function getAddInfo2(pkg) {
   return new Nothing();
 }
 
-
+//-----------------------------------------
+// Exercises: 
+//
+// First story line:
+//   Create list monad:
+//   1. Must be a constructor that takes value and 
+//      returns one-element array with this value.
+// Second story line:
+//   Create Either monad. (Either a b) can be (Left a) or (Right b) 
+//   like (Optional a) can be Nothing or (Just a):
+//   1. Must have Left and Right constructors.

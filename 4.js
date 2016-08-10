@@ -52,3 +52,20 @@ console.log();
 console.log('getAddInfo2');
 tryFunc(pkgs, getAddInfo2);
 console.log();
+
+//-----------------------------------------
+// Exercises: 
+//
+// First story line:
+//   Bind list monad in other way:
+//   1. Must be applyM method that takes 
+//      func(takes value and returns array of values) as argument and
+//      applies this func to every element of array and
+//      takes from first array first element, second array - second element and so on.
+//   2. Create any func that takes value and returns array of values 
+//      and test it with new binding.
+// Second story line:
+//   Create monoid for Either monad.
+//   1. Must be mempty that returns (Left "Epic fail")
+//   2. Must be mappend that returns first argument if it is Right else returns second if it is Right else returns Left with concatenanted messages of two Lefts. 
+//   3. Must be mconcat that returns Right if anyone is Right and concatenated errors otherwise.
