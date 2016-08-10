@@ -16,5 +16,8 @@ function getByPath(obj, path) {
 
   return funcs.reduce((acc, cur) => acc.bindM(cur), new Just(obj));
 
+  function getField(fieldname, obj) {
+    return fieldname in obj ? new Just(obj[fieldname]) : new Nothing();
+  }
 }
 

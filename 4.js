@@ -1,6 +1,6 @@
 /*
  * Simple optional binding
- * Meet nice girl - take nice girl
+ * See nice girl - take nice girl
  *
  */
 
