@@ -5,8 +5,12 @@ function Just(value) {
 }
 
 Nothing.prototype.bindM = function(_) { return this; }
+Nothing.prototype.appendM = function(_) { return this; }
 
-Just.prototype.bindM = function (func) { return func(this.value); } 
+Just.prototype.bindM = function (func) { 
+  return func(this.value); 
+} 
+Just.prototype.appendM = monadB => monadB;
 
 function doM(gen) {
   function step(value) {
@@ -19,4 +23,4 @@ function doM(gen) {
   return step();
 }
 
-module.exports = { Nothing, Just, doM};
+module.exports = { Nothing, Just, doM };
